@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.3/cerulean/bootstrap.min.css"
+        integrity="sha512-dQLT/B7byn2LjN/DN4zeBKpwGV6qbidV0XiMRWQOL7TGrV7FkZFldkGG+DGMU+CQnMTcRZlUI7GMWt1j6akNew=="
+        crossorigin="anonymous" />
+    <title>KejaNow</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>KejaNow</h1>
+        <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <div class="container">
+                <a href="../" class="navbar-brand">KejaNow <span style="color: rgb(44, 230, 100);"><strong>- Django Framework</strong></span></a>
+                <a href="file:///C:/Users/FELIX/Desktop/PythonProject/KejaNow-Project/KejaNow_mysite/KejaNow/templates/main/login.html" class="navbar-tech">Log in </a>
+                <a href="file:///C:/Users/FELIX/Desktop/PythonProject/KejaNow-Project/KejaNow_mysite/KejaNow/templates/main/register.html" class="navbar-tech">Sign up</a>
+            </div>
+        </div>
+        <br /><br /> <br>
+        <div id="jumbotron" class="jumbotron" style="text-align: center; margin-top: -40px;">
+            <h1 class="display-5">KejaNow APP</h1>
+            <h5>Using Python Language and Django Framework</h5>
+            <!-- <img src="{% static 'images/weather.png' %}" class="image" style="width:100px; margin-bottom:-50px;"> -->
+        </div>
+    
+        <nav>
+            <ul>
+                <li><a href="#listings">Property Listings</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search">
+            <h2>Find Your next Home with ease</h2>
+            <form action="#" method="GET">
+                <input type="text" placeholder="Location" required>
+                <input type="number" placeholder="Max Price" required>
+                <select name="type" required>
+                    <option value="">Select Type</option>
+                    <option value="rent">For Rent</option>
+                    <option value="sale">For Sale</option>
+                </select>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section id="listings">
+            <h2>Property Listings</h2>
+            <div class="listing">
+                <h3>1 Bedroom Apartment</h3>
+                <p>Location: Kasarani</p>
+                <p>Price: 15,000/month</p>
+                <p>Description: A spacious 1-bedroom apartment in the heart of the city.</p>
+                <button>Contact Landlord</button>
+            </div>
+
+            <div class="listing">
+                <h3>2 Bedroom House for Sale</h3>
+                <p>Location: Kilimani</p>
+                <p>Price: 10,000,000</p>
+                <p>Description: A cozy 2-bedroom house with a large backyard.</p>
+                <button>Contact Seller</button>
+            </div>
+            <div class="listing">
+                <h3> Bedsitter</h3>
+                <p>Location: Kaloleni</p>
+                <p>Price: 7,000</p>
+                <p>Description: Water available 24hrs.</p>
+                <button>Contact Landlord</button>
+            </div>
+
+            <!-- Add more listings as needed -->
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Your description goes here.</p> <!-- Close the paragraph tag -->
+        </section>
+    </main>
+
+</body>
+</html>
